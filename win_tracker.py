@@ -2,7 +2,7 @@ import requests
 import matplotlib.pyplot as plt
 
 lobby_type_ranked = 7
-account_id = '16767197'
+account_id = ''
 
 queries = {'limit': 20, 'lobby_type': 7} #lobby type 7 = ranked
 
