@@ -1,10 +1,9 @@
 import requests
 import matplotlib.pyplot as plt
 
-lobby_type_ranked = 7
-account_id = ''
+account_id = '' #enter your account ID here
 
-queries = {'limit': 20, 'lobby_type': 7} #lobby type 7 = ranked
+queries = {'limit': 20, 'lobby_type': 7} #limit is the recent number of matches it will query, lobby type 7 = ranked, other parameters can be added based on openDOTA's API
 
 res = requests.get(f'https://api.opendota.com/api/players/{account_id}/Matches', params = queries)
 
